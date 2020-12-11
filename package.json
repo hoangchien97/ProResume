@@ -19,5 +19,6 @@
   "homepage": "https://github.com/hoangchien97/ProResume#readme",
   "devDependencies": {
     "node-sass": "^5.0.0"
-  }
+  },
+  "dependencies": {}
 }
