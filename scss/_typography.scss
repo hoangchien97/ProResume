@@ -1,0 +1,16 @@
+@import "variable";
+html,
+body {
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Google Sans",
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-style: normal;
+  // This defines what 1rem is
+  font-size: 87.5%; //1 rem = 14px; 14px/16px = 87.5%
+}
+
+a,
+a:hover {
+  color: $color-primary;
+}

@@ -1,0 +1,7 @@
+.name {
+  color: $color-primary;
+  font-size: 2rem;
+  @include respond(tab-land) {
+    color: $color-blue;
+  }
+}
