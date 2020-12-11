@@ -4,7 +4,8 @@
   "description": "Landing page for pro resume of me.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "node-sass scss/main.scss css/style.css -w"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/hoangchien97/ProResume/issues"
   },
-  "homepage": "https://github.com/hoangchien97/ProResume#readme"
+  "homepage": "https://github.com/hoangchien97/ProResume#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
 }
