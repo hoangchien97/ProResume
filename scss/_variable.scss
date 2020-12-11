@@ -6,3 +6,61 @@ $color-light-blue: #01bafd;
 $color-white: #fff;
 $color-yellow: #d6ac22;
 
+/* BREAKPOINTS */
+$xxs: 445px;
+$xs: 625px;
+$s: 768px;
+$ms: 840px;
+$m: 960px;
+$ml: 1160px;
+$l: 1290px;
+$xl: 1440px;
+$xxl: 1600px;
+
+// FONT SIZES
+$font-size-default: 1rem; //1rem = 14px
+$font-size-xxxs: 0.5rem;
+$font-size-xxs: 0.625rem;
+$font-size-xs: 0.75rem;
+$font-size-s: 0.875rem;
+$font-size-ms: 1.25rem;
+$font-size-ml: 1.375rem;
+$font-size-l: 1.75rem;
+$font-size-xl: 3rem;
+
+// MEDIA QUERY MANAGER
+/*
+0 - 445px:      Phone
+768 - 960px:    Tablet portrait
+960 - 1290px:   Tablet landscape
+[1290 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+*/
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (min-width: $xxs) {
+      @content;
+    } //445px
+  }
+  @if $breakpoint == tab-port {
+    @media only screen and (min-width: $s) {
+      @content;
+    } //768px
+  }
+  @if $breakpoint == tab-land {
+    @media only screen and (min-width: $m) {
+      @content;
+    } //960px
+  }
+  @if $breakpoint == big-desktop {
+    @media only screen and (min-width: $l) {
+      @content;
+    } //1290px
+  }
+}

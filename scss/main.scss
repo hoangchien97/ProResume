@@ -1,8 +1,6 @@
+// Base variables, mixins and so on
 @import "reset";
-@import "typography";
 @import "variable";
-
-.name {
-  color: $color-primary;
-  font-size: 30px;
-}
+@import "mixin";
+@import "typography";
+@import "header";

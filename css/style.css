@@ -74,19 +74,49 @@ th:not([align]) {
   text-align: left; }
 
 /* COLORS:*/
+/* BREAKPOINTS */
+/*
+0 - 445px:      Phone
+768 - 960px:    Tablet portrait
+960 - 1290px:   Tablet landscape
+[1290 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+*/
+/* COLORS:*/
+/* BREAKPOINTS */
+/*
+0 - 445px:      Phone
+768 - 960px:    Tablet portrait
+960 - 1290px:   Tablet landscape
+[1290 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+*/
 html,
 body {
   height: 100%;
-  font-family: -apple-system, BlinkMacSystemFont, "Google Sans", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: -apple-system, BlinkMacSystemFont, "Google Sans", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-style: normal;
-  font-weight: 400;
-  font-size: 16px; }
+  font-size: 87.5%; }
 
 a,
 a:hover {
   color: #577285; }
 
-/* COLORS:*/
 .name {
   color: #577285;
-  font-size: 30px; }
+  font-size: 2rem; }
+  @media only screen and (min-width: 960px) {
+    .name {
+      color: #00b9fe; } }
